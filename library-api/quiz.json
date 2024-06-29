@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "question": "Kdo napsal 'Malý život'?",
+    "answers": [
+      { "id": 1, "text": "Hanya Yanagihara", "isCorrect": true },
+      { "id": 2, "text": "Elena Ferrante", "isCorrect": false },
+      { "id": 3, "text": "Haruki Murakami", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "Kde se odehrává děj knihy 'Amerikána'?",
+    "answers": [
+      { "id": 1, "text": "Spojené státy a Nigérie", "isCorrect": true },
+      { "id": 2, "text": "Kanada a Nigérie", "isCorrect": false },
+      { "id": 3, "text": "Velká Británie a Nigérie", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "Která postava se nachází v knize 'Norské dřevo'?",
+    "answers": [
+      { "id": 1, "text": "Toru Watanabe", "isCorrect": true },
+      { "id": 2, "text": "Hajime", "isCorrect": false },
+      { "id": 3, "text": "Kafka Tamura", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "Která kniha je nejprodávanější sérií všech dob?",
+    "answers": [
+      { "id": 1, "text": "Harry Potter", "isCorrect": true },
+      { "id": 2, "text": "Pán prstenů", "isCorrect": false },
+      { "id": 3, "text": "Hobit", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "Který den se odehrává děj knihy 'Jeden den' od Davida Nichollse?",
+    "answers": [
+      { "id": 1, "text": "15. července", "isCorrect": true },
+      { "id": 2, "text": "5. května", "isCorrect": false },
+      { "id": 3, "text": "25. prosince", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 6,
+    "question": "Jak se jmenuje hlavni postava romanu Honzlova od Zdeny Salivarove?",
+    "answers": [
+      { "id": 1, "text": "Jana", "isCorrect": true },
+      { "id": 2, "text": "Hana", "isCorrect": false },
+      { "id": 3, "text": "Dana", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 6,
+    "question": "'Just Kids' je biografie'",
+    "answers": [
+      { "id": 1, "text": "Roberta Mapplethorpa", "isCorrect": false },
+      { "id": 2, "text": "Patti Smith", "isCorrect": true },
+      { "id": 3, "text": "Jannis Joplin", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 7,
+    "question": "Která kniha je považována za zakladatele žánru dystopie?",
+    "answers": [
+      { "id": 1, "text": "1984", "isCorrect": true },
+      { "id": 2, "text": "Fahrenheit 451", "isCorrect": false },
+      { "id": 3, "text": "Brave New World", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 8,
+    "question": "Kde se odehrává děj knihy 'Velký Gatsby'?",
+    "answers": [
+      { "id": 1, "text": "Long Island", "isCorrect": true },
+      { "id": 2, "text": "Los Angeles", "isCorrect": false },
+      { "id": 3, "text": "Chicago", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 9,
+    "question": "Kdo napsal knihu 'Jméno růže'?",
+    "answers": [
+      { "id": 1, "text": "Umberto Eco", "isCorrect": true },
+      { "id": 2, "text": "Dan Brown", "isCorrect": false },
+      { "id": 3, "text": "Gabriel García Márquez", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 10,
+    "question": "Kdo je autorem knihy 'Mistr a Markétka'?",
+    "answers": [
+      { "id": 1, "text": "Michail Bulgakov", "isCorrect": true },
+      { "id": 2, "text": "Ivan Gončarov", "isCorrect": false },
+      { "id": 3, "text": "Nikolaj Gogol", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 11,
+    "question": "Která kniha byla zfilmována s názvem 'Gone Girl'?",
+    "answers": [
+      { "id": 1, "text": "Zmizelá", "isCorrect": true },
+      { "id": 2, "text": "Dívka ve vlaku", "isCorrect": false },
+      { "id": 3, "text": "Než jsem tě poznala", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 12,
+    "question": "Jak se jmenuje hlavní postava knihy 'Sirotčinec slečny Peregrinové pro podivné děti'?",
+    "answers": [
+      { "id": 1, "text": "Jacob Portman", "isCorrect": true },
+      { "id": 2, "text": "Harry Potter", "isCorrect": false },
+      { "id": 3, "text": "Percy Jackson", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 13,
+    "question": "Jak se jmenuje hlavní postava knihy 'Kde zpívají raci'?",
+    "answers": [
+      { "id": 1, "text": "Kya Clarková", "isCorrect": true },
+      { "id": 2, "text": "Olive Kitteridge", "isCorrect": false },
+      { "id": 3, "text": "Eleanor Oliphant", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 14,
+    "question": "Kdo napsal knihu 'Normální lidi'?",
+    "answers": [
+      { "id": 1, "text": "Sally Rooney", "isCorrect": true },
+      { "id": 2, "text": "Margaret Atwood", "isCorrect": false },
+      { "id": 3, "text": "Zadie Smith", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 15,
+    "question": "Kde se odehrává děj knihy 'Dívka ve vlaku'?",
+    "answers": [
+      { "id": 1, "text": "Londýn", "isCorrect": true },
+      { "id": 2, "text": "New York", "isCorrect": false },
+      { "id": 3, "text": "Paříž", "isCorrect": false }
+    ]
+  }
+]
