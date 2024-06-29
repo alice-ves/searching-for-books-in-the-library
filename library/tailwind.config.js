@@ -10,7 +10,7 @@ export default {
     container: { center: true },
     extend: {
       colors: {
-        'ligt-orange': '#fff2db',
+        'light-orange': '#fff2db',
         orange: '#ffa600',
         'red-orange': '#ff8531',
         purple: '#bc5090',
@@ -20,6 +20,9 @@ export default {
         'font-color': '#00202e',
         'success-color': '#50BC7C',
         'alert-color': '#ff6361',
+      },
+      fontFamily: {
+        serif: ['Oleo Script', 'serif'],
       },
     },
   },
