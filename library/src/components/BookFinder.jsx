@@ -4,43 +4,33 @@ import { IconBar } from './IconBar';
 const BookList = ({ books }) => {
   return (
     <>
-      {books.length > 0 ? (
-        <div className="flex flex-col items-center gap-2 ">
-          {books.map((book) => {
-            return (
-              <div
-                className="bg-light-orange rounded-md w-10/12 h-52 "
-                key={book.id}
-              >
-                <p className="font-bold">{book.volumeInfo.authors}</p>
-                <p>{book.volumeInfo.title}</p>
-                <p>{book.volumeInfo.subtitle}</p>
-                <div className="flex w-full justify-center items-center">
-                  <div className="w-1/2">
-                    <img
-                      className="w-16 object-cover"
-                      src={book.volumeInfo.imageLinks.smallThumbnail}
-                      alt={book.volumeInfo.title}
-                    ></img>
-                  </div>
-                  <div className="flex flex-col gap-2 items-center justify-center">
-                    <button className=" bg-red-orange p-2">rezervovat</button>
-                    <button className=" bg-red-orange p-2">na wishlist</button>
-                  </div>
+      <div className="flex flex-col items-center gap-2 ">
+        {books.map((book) => {
+          return (
+            <div
+              className="bg-light-orange rounded-md w-10/12 h-52 "
+              key={book.id}
+            >
+              <p className="font-bold">{book.volumeInfo.authors}</p>
+              <p>{book.volumeInfo.title}</p>
+              <p>{book.volumeInfo.subtitle}</p>
+              <div className="flex w-full justify-center items-center">
+                <div className="w-1/2">
+                  <img
+                    className="w-16 object-cover"
+                    src={book.volumeInfo.imageLinks.smallThumbnail}
+                    alt={book.volumeInfo.title}
+                  ></img>
+                </div>
+                <div className="flex flex-col gap-2 items-center justify-center">
+                  <button className=" bg-red-orange p-2">rezervovat</button>
+                  <button className=" bg-red-orange p-2">na wishlist</button>
                 </div>
               </div>
-            );
-          })}
-        </div>
-      ) : (
-        <>
-          <p className="font-bold">Knihy nenalezeny</p>
-          <ul>
-            <li>Zkontroluj si nazev</li>
-            <li>napis nam na wishlist</li>
-          </ul>
-        </>
-      )}
+            </div>
+          );
+        })}
+      </div>
     </>
   );
 };
@@ -48,6 +38,7 @@ const BookList = ({ books }) => {
 export const BookFinder = () => {
   const [author, setAuthor] = useState('');
   const [books, setBooks] = useState([]);
+  const [searched, setSearched] = useState(false);
 
   const fetchBooks = async (author) => {
     const response = await fetch(
@@ -55,6 +46,7 @@ export const BookFinder = () => {
     );
     const data = await response.json();
     setBooks(data.items || []);
+    setSearched(true);
     console.log(books);
   };
 
@@ -85,7 +77,17 @@ export const BookFinder = () => {
           HLEDEJ
         </button>
       </form>
-      <BookList books={books} author={author} />
+      {books.length === 0 && searched == true ? (
+        <>
+          <p className="font-bold">Knihy nenalezeny</p>
+          <ul>
+            <li>Zkontroluj si nazev</li>
+            <li>napis nam na wishlist</li>
+          </ul>
+        </>
+      ) : (
+        <BookList books={books}></BookList>
+      )}
     </div>
   );
 };
